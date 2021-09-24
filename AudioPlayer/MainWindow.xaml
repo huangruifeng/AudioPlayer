@@ -1,0 +1,27 @@
+﻿<Window x:Class="AudioPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AudioPlayer"
+        mc:Ignorable="d"
+        Topmost="True"
+        WindowStyle="None"
+        SizeToContent="WidthAndHeight"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Icon="img/title.ico"
+        ResizeMode="NoResize"
+        Title="海大富">
+    <Window.Resources>
+        <Image x:Key="backimg" Source="pack://application:,,,/img/background.jpg"></Image>
+        <BitmapImage x:Key="background" UriSource="./img/background.jpg" />
+    </Window.Resources>
+    <Grid Background="Transparent" >
+        <Ellipse x:Name="body"  Width="60" Height="60" Opacity="0.7">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="{StaticResource background}"></ImageBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+    </Grid>
+</Window>
